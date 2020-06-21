@@ -1,0 +1,214 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-21T12:00:26.512Z",
+    "end": "2020-06-21T12:00:57.430Z",
+    "duration": 30918,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c2c30af9-288f-4b41-b2a2-9b37257264ce",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+          "title": "👀  Validating Product Compare Page",
+          "fullFile": "D:\\Codes\\momenton\\ui\\test\\uiTest.js",
+          "file": "\\test\\uiTest.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "👀  Validating Product Compare Page \"before all\" hook",
+              "timedOut": false,
+              "duration": 1345,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "browser = await playwright[browserType].launch({ headless: false });\ncontext = await browser.newContext();\npage = await context.newPage();\nawait page.setViewportSize({\n  width: 1920,\n  height: 1080,\n});",
+              "err": {},
+              "uuid": "0c3d5465-5d05-4266-ba74-ef6f721d9340",
+              "parentUUID": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook",
+              "fullTitle": "👀  Validating Product Compare Page \"after all\" hook",
+              "timedOut": false,
+              "duration": 889,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await browser.close();",
+              "err": {},
+              "uuid": "503dcf10-2781-4933-91a3-a826a419d663",
+              "parentUUID": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "😊  Should display shop homepage",
+              "fullTitle": "👀  Validating Product Compare Page 😊  Should display shop homepage",
+              "timedOut": false,
+              "duration": 17249,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await page.goto(amazonUrl, { waitUntil: \"networkidle0\" });\nawait page.waitForSelector(\".nav-cart-icon\");\nawait page.waitForFunction(imagesHaveLoaded, { timeout: 10000 });\nawait page.screenshot({\n  path: `screenshots/${browserType}/01_homePage.png`,\n});",
+              "err": {},
+              "uuid": "2e2b3635-ac8b-4a74-9666-63122d81a379",
+              "parentUUID": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "😊  Should be able to search product",
+              "fullTitle": "👀  Validating Product Compare Page 😊  Should be able to search product",
+              "timedOut": false,
+              "duration": 3610,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await page.fill(\"#twotabsearchtextbox\", \"amazon echo dot\");\nawait page.click(\"input[type='submit']\");\nawait page.waitForSelector(\"span[cel_widget_id='MAIN-SEARCH_RESULTS']\");\nawait page.waitForFunction(imagesHaveLoaded, { timeout: 10000 });\nawait page.screenshot({\n  path: `screenshots/${browserType}/02_searchProduct.png`,\n});",
+              "err": {},
+              "uuid": "c7c77956-533c-4b50-827d-00f0b4dc4745",
+              "parentUUID": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "😊  Should be able to display product page",
+              "fullTitle": "👀  Validating Product Compare Page 😊  Should be able to display product page",
+              "timedOut": false,
+              "duration": 3533,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await page.click(\"span[cel_widget_id='MAIN-SEARCH_RESULTS']\");\nawait page.waitForSelector(\"#add-to-cart-button\");\nawait page.waitForSelector(\"#productTitle\");\nawait page.waitForFunction(imagesHaveLoaded, { timeout: 10000 });\nawait page.screenshot({\n  path: `screenshots/${browserType}/03_productPage.png`,\n});",
+              "err": {},
+              "uuid": "79d28f1f-8395-48ff-b536-7640c4e031e6",
+              "parentUUID": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "😊  Should be able to add product to cart",
+              "fullTitle": "👀  Validating Product Compare Page 😊  Should be able to add product to cart",
+              "timedOut": false,
+              "duration": 2144,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await page.click(\"#add-to-cart-button\");\nawait page.waitForSelector(\"#huc-v2-order-row-confirm-text\");\nawait page.waitForFunction(imagesHaveLoaded, { timeout: 10000 });\nawait page.screenshot({\n  path: `screenshots/${browserType}/04_productAddedToCart.png`,\n});",
+              "err": {},
+              "uuid": "ec0a3651-d93a-474f-83c2-bc46c702c480",
+              "parentUUID": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "😊  Should be able to checkout",
+              "fullTitle": "👀  Validating Product Compare Page 😊  Should be able to checkout",
+              "timedOut": false,
+              "duration": 2086,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await page.click(\".hlb-checkout-button\");\nawait page.waitForSelector(\"#ap_email\");\nawait page.waitForFunction(imagesHaveLoaded, { timeout: 10000 });\nawait page.screenshot({\n  path: `screenshots/${browserType}/05_checkout.png`,\n});",
+              "err": {},
+              "uuid": "ca8397a0-3332-40a6-98b1-1d2e569356a2",
+              "parentUUID": "2057e4a5-86f3-4387-948f-99c5ade191fd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e2b3635-ac8b-4a74-9666-63122d81a379",
+            "c7c77956-533c-4b50-827d-00f0b4dc4745",
+            "79d28f1f-8395-48ff-b536-7640c4e031e6",
+            "ec0a3651-d93a-474f-83c2-bc46c702c480",
+            "ca8397a0-3332-40a6-98b1-1d2e569356a2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 28622,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 30000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "momenton-api-test",
+  "version": "1.0.0",
+  "description": "Momenton Api Test Automation",
+  "author": "Marc Dacanay",
+  "scripts": {
+    "mocha": "node ./node_modules/mocha/bin/mocha",
+    "test": "mocha --opts ./mocha.opts"
+  },
+  "dependencies": {
+    "mocha": "^8.0.1"
+  }
+}
