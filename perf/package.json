@@ -1,0 +1,14 @@
+{
+    "name": "momenton-perf-test",
+    "version": "1.0.0",
+    "description": "Momenton Performance Test Automation",
+    "author": "Marc Dacanay",
+    "scripts": {
+        "artillery": "node ./node_modules/artillery/bin/artillery",
+        "test": "artillery run test/perfTest.yml -k -o report.json",
+        "report": "artillery report report.json"
+    },
+    "dependencies": {
+        "artillery": "^1.6.0"
+    }
+}

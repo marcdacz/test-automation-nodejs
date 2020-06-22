@@ -18,3 +18,9 @@ OR
 
 $ npm run test-firefox
 ```
+
+### Report:
+
+```
+ui\mochawesome-report\mochawesome.html
+```

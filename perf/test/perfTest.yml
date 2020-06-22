@@ -1,0 +1,9 @@
+config:
+    target: "https://api.openaq.org"
+    phases:
+        - duration: 5
+          arrivalCount: 1000
+scenarios:
+    - flow:
+          - get:
+                url: "/v1/countries"
