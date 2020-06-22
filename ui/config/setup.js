@@ -1,5 +1,7 @@
 global._ = require("lodash");
 global.fs = require("fs-extra");
+global.PNG = require("pngjs").PNG;
+global.pixelmatch = require("pixelmatch");
 global.chai = require("chai");
 global.expect = chai.expect;
 global.playwright = require("playwright");
@@ -10,4 +12,9 @@ console.log("----------------------------------------------");
 console.log(`Browser:\t${browserType}`);
 console.log("----------------------------------------------");
 
-fs.ensureDirSync(`screenshots/${browserType}`);
+global.actualScreenShotPath = `screenshots/${browserType}/actual/`;
+global.baselineScreenShotPath = `screenshots/${browserType}/baseline`;
+global.diffScreenShotPath = `screenshots/${browserType}/diff`;
+fs.ensureDirSync(actualScreenShotPath);
+fs.ensureDirSync(baselineScreenShotPath);
+fs.ensureDirSync(diffScreenShotPath);
