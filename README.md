@@ -1,6 +1,6 @@
 # Test Automation - NodeJS
 
-## [UI Test Automation](ui\README.md)
+## [UI Test Automation](ui/README.md)
 
 Tools Used:
 
@@ -14,7 +14,7 @@ npm install
 npm run test-chrome
 ```
 
-## [API Test Automation](api\README.md)
+## [API Test Automation](api/README.md)
 
 Tools Used:
 
@@ -29,7 +29,7 @@ npm install
 npm run test
 ```
 
-## [Performance Test Automation](perf\README.md)
+## [Performance Test Automation](perf/README.md)
 
 Tools Used:
 
