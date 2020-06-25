@@ -1,4 +1,4 @@
-# Momenton Performance Test Automation
+# Performance Test Automation
 
 ### Installation:
 
