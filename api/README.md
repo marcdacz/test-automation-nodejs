@@ -1,4 +1,4 @@
-# Momenton API Test Automation
+# API Test Automation
 
 ### Installation:
 
