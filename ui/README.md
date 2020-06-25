@@ -1,4 +1,4 @@
-# Momenton UI Test Automation
+# UI Test Automation
 
 ### Installation:
 
