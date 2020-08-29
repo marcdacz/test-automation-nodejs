@@ -9,7 +9,7 @@ Tools Used:
 -   Mochawesome Report
 
 ```
-cd momenton/ui
+cd test-automation-nodejs/ui
 npm install
 npm run test-chrome
 ```
@@ -24,7 +24,7 @@ Tools Used:
 -   Mochawesome Report
 
 ```
-cd momenton/api
+cd test-automation-nodejs/api
 npm install
 npm run test
 ```
@@ -36,7 +36,7 @@ Tools Used:
 -   Artillery
 
 ```
-cd momenton/perf
+cd test-automation-nodejs/perf
 npm install
 npm run test
 ```
