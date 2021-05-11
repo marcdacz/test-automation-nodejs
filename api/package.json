@@ -11,7 +11,7 @@
         "chai": "^4.2.0",
         "chai-asserttype": "^1.0.5",
         "chai-json-schema": "^1.5.1",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.21",
         "mocha": "^8.0.1",
         "mochawesome": "^6.1.1",
         "superagent": "^5.2.2"
